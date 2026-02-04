@@ -1,8 +1,17 @@
 {
-  "name": "rebel7-api",
+  "name": "rebel7-stack",
   "private": true,
-  "type": "module",
-  "dependencies": {
-    "@vercel/node": "^3.0.0"
+  "workspaces": [
+    "apps/*",
+    "rebel7-api",
+    "rebel7-marketing",
+    "rebel7-premiumhub",
+    "rebel7-web"
+  ],
+  "engines": {
+    "node": "20.x"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
   }
 }
