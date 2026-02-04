@@ -12,7 +12,7 @@ export async function createClient() {
                 getAll() {
                     return cookieStore.getAll();
                 },
-                setAll(cookiesToSet) {
+                setAll(cookiesToSet: Array<{ name: string; value: string; options: any }>) {
                     // Next headers cookies è “readonly” in alcuni contesti,
                     // ma in route handlers e server actions funziona.
                     cookiesToSet.forEach(({ name, value, options }) => {
