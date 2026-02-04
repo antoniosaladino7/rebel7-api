@@ -7,3 +7,4 @@ node_modules
 .DS_Store
 .vercel
 npm-debug.log*
+apps/revolution7/tsconfig.tsbuildinfo
