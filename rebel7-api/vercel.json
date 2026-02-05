@@ -1,8 +1,8 @@
 {
-    "routes": [
+    "rewrites": [
         {
-            "src": "^/$",
-            "dest": "/api/health"
+            "source": "/",
+            "destination": "/api/health"
         }
     ]
 }
